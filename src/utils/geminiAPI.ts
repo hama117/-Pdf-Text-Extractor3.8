@@ -8,7 +8,7 @@ export class GeminiAPI {
   }
 
   async extractTextFromImage(imageBase64: string): Promise<string> {
-    const url = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent';
+    const url = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent';
 
     const response = await fetch(`${url}?key=${this.apiKey}`, {
       method: 'POST',
